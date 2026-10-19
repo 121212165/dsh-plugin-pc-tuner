@@ -1,0 +1,10 @@
+- insert:
+    - id: pc-tuner
+      name: dsh-plugin-pc-tuner
+      config:
+        enabled: true
+        # dataDir: ~/.dsh/pc-tuner
+        topN: 10        # CPU/内存 top N
+        tempAgeDays: 7  # %TEMP% 只清超过这个天数的文件
+        allowDestructive: false # 总开关：为 true 时 /perf clean --confirm 才会真删
+        order: 760      # prompt section order (tools start at 1000)
